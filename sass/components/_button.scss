@@ -1,0 +1,21 @@
+.btn {
+    border: none;
+    font-size: 16px;
+    // padding: 10px 32px 10px 32px;
+    font-family: inherit;
+    min-width: 216px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    color: var(--primary-background-color);
+
+    transition: background-color var(--duration) var(--timing-function);
+
+
+&:hover,
+&:focus {
+    background-color: #188ce8;
+}
+}

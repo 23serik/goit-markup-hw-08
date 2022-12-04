@@ -1,0 +1,42 @@
+.section{
+ @include section;
+ 
+&__list {
+    @extend %list;
+        display: flex;
+        gap: 30px;
+    }
+
+    &__title {
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__overlay {
+        position: absolute;
+        bottom: 0;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        width: 100%;
+        background-color: rgba(47, 48, 58, 0.8);
+    }
+
+    &__text {
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        color: var(--primary-background-color);
+    }
+
+
+
+}

@@ -1,0 +1,29 @@
+.about {
+    padding-top: 94px;
+    padding-bottom: 0px;
+
+
+&__list {
+    @extend %list;
+    display: flex;
+    gap: 30px;
+}
+
+&__item {
+    width: 270px;
+}
+
+&__title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+&__description {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color-text);
+}
+}
