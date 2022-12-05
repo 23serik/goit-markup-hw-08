@@ -1,10 +1,26 @@
 .icon__box {
+
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 270px;
+    // width: 270px;
     height: 120px;
     border-radius: 4px;
     margin-bottom: 30px;
     background: var(--secondary-background-color);
+
+    // mobile
+        @media screen and (min-width: 480px) {
+            width: 450px;
+        }
+    
+        // tablet
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+    
+        // desktop
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+}
 }
