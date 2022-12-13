@@ -1,19 +1,29 @@
 .logo {
     @extend %link;
-    margin-right: 93px;
-    width: 145px;
-    height: 31px;
-    left: 215px;
-    top: 24px;
     font-family: "Raleway";
     font-style: normal;
     font-weight: 700;
-    align-items: center;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: calc(28px/24px);
+    text-align: center;
     letter-spacing: 0.03em;
 
     color: var(--accent-color);
+
+    @media screen and (min-width: 1200px) {
+            margin-right: 93px;
+            width: 145px;
+                height: 31px;
+                left: 215px;
+                top: 24px;
+                font-family: "Raleway";
+                font-style: normal;
+                font-weight: 700;
+                align-items: center;
+                font-size: 26px;
+                line-height: 1.19;
+                letter-spacing: 0.03em;
+        }
 
 
 &__header {

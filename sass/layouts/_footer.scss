@@ -5,12 +5,30 @@
 
 
 &__container {
-        display: flex;
-        align-items: baseline;
+
+    @media screen and (max-width: 1199px) {
+            text-align: center;
+        }
+    
+        @media screen and (min-width: 768px) {
+            display: flex;
+            align-items: baseline;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            // display: flex;
+            // align-items: baseline;
+            flex-wrap: nowrap;
+            
+        }
+        
     }
 
     &__logo {
         margin-bottom: 20px;
+       
     }
 
 &__studio {
@@ -48,8 +66,11 @@
 }
 
 &__link:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
     
+    @media screen and (min-width: 1200px) {
+            margin-bottom: 9px;
+        }
 }
 &__link{
     @extend %list;
@@ -61,7 +82,12 @@
 }
 
 &__contact{
+    margin-bottom: 60px;
     min-width: 231px;
-    margin-right: 70px;
+
+    @media screen and (min-width: 1200px) {
+            margin-right: 70px;
+        }
+    
 }
 }
