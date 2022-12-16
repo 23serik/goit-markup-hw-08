@@ -22,13 +22,13 @@ list {
 }
 
 /* Класс для обнуления базовых свойств у ссылок  */
-link {
+.link {
     text-decoration: none;
     color: inherit;
 }
 
 /* Свойства для корректного отображения картинок  */
-img {
+.img {
     display: block;
     max-width: 100%;
     height: auto;

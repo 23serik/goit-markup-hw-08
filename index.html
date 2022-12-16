@@ -59,6 +59,12 @@
             +38 096 111 11 11</a>
         </li>
       </ul>
+      <!-- mobile-menu -->
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="btn-mobile" wight="40px" height="40px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <use href="./images/icons/symbol-defs.svg#icon-menu-40px"></use>
+        </svg>
+      </button>
     </div>
   </header>
   <main>
@@ -125,19 +131,46 @@
         <h2 class="section__title">Чим ми займаємося</h2>
         <ul class="section__list ">
           <li class="section__item">
-            <img src="./images/img-1.jpg" alt="робота вебстудії" width="370" height="294" />
+            <picture>
+              <!-- desktop screen -->
+              <source media="(min-width: 1200px)" srcset="
+              ./images/what we do/img_ds@1x.webp 1x,
+              ./images/what we do/img_ds@2x.webp 2x" type="image/webp" />
+              <source media="(min-width: 1200px)" srcset="
+              ./images/what we do/img_ds@1x.jpg 1x,
+              ./images/what we do/img_dsk@2x.jpg 2x" type="image/jpg" />
+              <img src="./images/img-1.jpg" alt="робота вебстудії" width="370" height="294" />
+            </picture>
             <div class="section__overlay">
               <p class="section__text">Десктопні додатки</p>
             </div>
           </li>
           <li class="section__item">
+            <picture>
+              <!-- desktop screen -->
+              <source media="(min-width: 1200px)" srcset="
+                          ./images/what_we_do/img_m@1x.webp 1x,
+                          ./images/what_we_do/img_m@2x.webp 2x" type="image/webp" />
+              <source media="(min-width: 1200px)" srcset="
+                          ./images/what_we_do/img_m@1x.jpg 1x,
+                          ./images/what_we_do/img_m@2x.jpg 2x" type="image/jpg" />
+            </picture>
             <img src="./images/img-2.jpg" alt="робота вебстудії" width="370" height="294" />
             <div class="section__overlay">
               <p class="section__text">Мобільні додатки</p>
             </div>
           </li>
           <li class="section__item">
-            <img src="./images/img-3.jpg" alt="робота вебстудії" width="370" height="294" />
+            <picture>
+              <!-- desktop screen -->
+              <source media="(min-width: 1200px)" srcset="
+                          images/what_we_do/img_dz@1x.webp 1x,
+                          ./images/what_we_do/img_dz@2x.webp 2x" type="image/webp" />
+              <source media="(min-width: 1200px)" srcset="
+                          ./images/what_we_do/img_dz@1x.jpg 1x,
+                          ./images/what_we_do/img_dz@2x.jpg 2x" type="image/jpg" />
+              <img src="./images/img-3.jpg" alt="робота вебстудії" width="370" height="294" />
+            </picture>
             <div class="section__overlay">
               <p class="section__text">Дизайнерські рішення</p>
             </div>
@@ -152,19 +185,32 @@
         <ul class="team__list">
           <li class="team__item">
             <picture>
+              <!-- desktop screen -->
               <source media="(min-width: 1200px)" srcset="
-                                ./images/team/Igor/img_desk@1x.jpg 1x,
-                                ./images/team/Igor/img_desk@2x.jpg 2x
-                              " />
+                              ./images/team/Igor/img_desk@1x.webp 1x,
+                              ./images/team/Igor/img_desk@2x.webp 2x" type="image/webp" />
+              <source media="(min-width: 1200px)" srcset="
+                              ./images/team/Igor/img_desk@1x.jpg 1x,
+                              ./images/team/Igor/img_desk@2x.jpg 2x
+                              " type="image/jpg" />
+              <!-- tab  screen-->
               <source media="(min-width: 768px)" srcset="
-                                ./images/team/Igor/img_tab@1x.jpg 1x,
-                                ./images/team/Igor/img_tab@2x.jpg 2x
-                              " />
+                              ./images/team/Igor/img_tab@1x.webp 1x,
+                              ./images/team/Igor/img_tab@2x.webp 2x
+                              " type="image/webp" />
+              <source media="(min-width: 768px)" srcset="
+                              ./images/team/Igor/img_tab@1x.jpg 1x,
+                              ./images/team/Igor/img_tab@2x.jpg 2x
+                                                              " type="image/jpg" />
+              <!-- mob screen -->
               <source media="(max-width: 767px)" srcset="
-                                ./images/team/Igor/img_mob@1x.jpg 1x,
-                                ./images/team/Igor/img_mob@2x.jpg 2x
-                              " />
-              <img src="./images/team/Igor/img_mob@2x.jpg.jpg" width="100%" alt="Ігор Дем'яненко" />
+                              ./images/team/Igor/img_mob@1x.webp 1x,
+                              ./images/team/Igor/img_mob@2x.webp 2x
+                              " type="image/webp" />
+              <source media="(max-width: 767px)" srcset="
+                              ./images/team/Igor/img_mob@1x.jpg 1x,
+                              ./images/team/Igor/img_mob@2x.jpg 2x" type="image/jpg" />
+              <img src="./images/team/Igor/img_mob@2x.jpg" width="100%" alt="Ігор Дем'яненко" />
             </picture>
             <!-- <img class="team__img" src="./images/workers-1.jpg" alt="наша команда" width="270" height="260" /> -->
             <div class="team__info">
@@ -209,18 +255,30 @@
           </li>
           <li class="team__item">
             <picture>
+              <!-- desctop screen -->
+              <source media="(min-width: 1200px)" srcset="
+                                            ./images/team/Olga/img_desk@1x.webp 1x,
+                                            ./images/team/Olga/img_desk@2x.webp 2x
+                                          " type="image/webp" />
               <source media="(min-width: 1200px)" srcset="
                                             ./images/team/Olga/img_desk@1x.jpg 1x,
-                                            ./images/team/Olga/img_desk@2x.jpg 2x
-                                          " />
+                                            ./images/team/Olga/img_desk@2x.jpg 2x " type="image/jpg" />
+              <!-- tab screen -->
               <source media="(min-width: 768px)" srcset="
-                                            ./images/team/Olga/img_tab@1x.jpg 1x,
-                                            ./images/team/Olga/img_tab@2x.jpg 2x
-                                          " />
+                                            ./images/team/Olga/img_tab@1x.webp 1x,
+                                            ./images/team/Olga/img_tab@2x.webp 2x
+                                          " type="image/webp" />
+              <source media="(min-width: 768px)" srcset="
+                                           ./images/team/Olga/img_tab@1x.jpg 1x,
+                                          ./images/team/Olga/img_tab@2x.jpg 2x" type="image/jpg" />
+              <!-- mob screen -->
               <source media="(max-width: 767px)" srcset="
-                                            ./images/team/Olga/img_mob@1x.jpg 1x,
-                                            ./images/team/Olga/img_mob@2x.jpg 2x
-                                          " />
+                                            ./images/team/Olga/img_mob@1x.webp 1x,
+                                            ./images/team/Olga/img_mob@2x.webp 2x
+                                          " type="image/webp" />
+              <source media="(max-width: 767px)" srcset="
+                                          ./images/team/Olga/img_mob@1x.jpg 1x,
+                                          ./images/team/Olga/img_mob@2x.jpg 2x" type="image/jpg" />
               <img src="./images/team/Olga/img_mob@2x.jpg" width="100%" alt="Ольга Рєпіна" />
             </picture>
             <!-- <img class="team__img" src="./images/workers-2.jpg" alt="наша команда" width="270" height="260" /> -->
@@ -266,17 +324,28 @@
           <li class="team__item">
             <picture>
               <source media="(min-width: 1200px)" srcset="
+                                            ./images/team/Nikola/img_desk@1x.webp 1x,
+                                            ./images/team/Nikola/img_desk@2x.webp 2x
+                                          " type="image/webp" />
+              <source media="(min-width: 1200px)" srcset="
                                             ./images/team/Nikola/img_desk@1x.jpg 1x,
-                                            ./images/team/Nikola/img_desk@2x.jpg 2x
-                                          " />
+                                            ./images/team/Nikola/img_desk@2x.jpg 2x " type="image/jpg" />
+              <!-- tab screen -->
               <source media="(min-width: 768px)" srcset="
-                                            ./images/team/Nikola/img_tab@1x.jpg 1x,
-                                            ./images/team/Nikola/img_tab@2x.jpg 2x
-                                          " />
+                                            ./images/team/Nikola/img_tab@1x.webp 1x,
+                                            ./images/team/Nikola/img_tab@2x.webp 2x
+                                          " type="image/webp" />
+              <source media="(min-width: 768px)" srcset="
+                                           ./images/team/Nikola/img_tab@1x.jpg 1x,
+                                          ./images/team/Nikola/img_tab@2x.jpg 2x" type="image/jpg" />
+              <!-- mob screen -->
               <source media="(max-width: 767px)" srcset="
-                                            ./images/team/Nikola/img_mob@1x.jpg 1x,
-                                            ./images/team/Nikola/img_mob@2x.jpg 2x
-                                          " />
+                                            ./images/team/Nikola/img_mob@1x.webp 1x,
+                                            ./images/team/Nikola/img_mob@2x.webp 2x
+                                          " type="image/webp" />
+              <source media="(max-width: 767px)" srcset="
+                                          ./images/team/Nikola/img_mob@1x.jpg 1x,
+                                          ./images/team/Nikola/img_mob@2x.jpg 2x" type="image/jpg" />
               <img src="./images/team/Nikola/img_mob@2x.jpg" width="100%" alt="Микола Тарасов" />
             </picture>
             <!-- <img class="team__img" src="./images/workers-3.jpg" alt="наша команда" width="270" height="260" /> -->
@@ -318,22 +387,33 @@
                 </li>
               </ul>
             </div>
-          </li>
+
           <li class="team__item">
             <picture>
               <source media="(min-width: 1200px)" srcset="
+                                                        ./images/team/Misha/img_desk@1x.webp 1x,
+                                                        ./images/team/Misha/img_desk@2x.webp 2x" type="image/webp" />
+              <source media="(min-width: 1200px)" srcset="
                                                         ./images/team/Misha/img_desk@1x.jpg 1x,
-                                                        ./images/team/Misha/img_desk@2x.jpg 2x
-                                                      " />
+                                                        ./images/team/Misha/img_desk@2x.jpg 2x " type="image/jpg" />
+              <!-- tab screen -->
               <source media="(min-width: 768px)" srcset="
-                                                        ./images/team/Misha/img_tab@1x.jpg 1x,
-                                                        ./images/team/Misha/img_tab@2x.jpg 2x
-                                                      " />
+                                                        ./images/team/Misha/img_tab@1x.webp 1x,
+                                                        ./images/team/Misha/img_tab@2x.webp 2x
+                                                      " type="image/webp" />
+              <source media="(min-width: 768px)" srcset="
+                                                       ./images/team/Misha/img_tab@1x.jpg 1x,
+                                                      ./images/team/Misha/img_tab@2x.jpg 2x" type="image/jpg" />
+              <!-- mob screen -->
               <source media="(max-width: 767px)" srcset="
-                                                        ./images/team/Misha/img_mob@1x.jpg 1x,
-                                                        ./images/team/Misha/img_mob@2x.jpg 2x
-                                                      " />
+                                                        ./images/team/Misha/img_mob@1x.webp 1x,
+                                                        ./images/team/Misha/img_mob@2x.webp 2x
+                                                      " type="image/webp" />
+              <source media="(max-width: 767px)" srcset="
+                                                      ./images/team/Misha/img_mob@1x.jpg 1x,
+                                                      ./images/team/Misha/img_mob@2x.jpg 2x" type="image/jpg" />
               <img src="./images/team/Misha/img_mob@2x.jpg" width="100%" alt="Михайло Єрмаков" />
+
             </picture>
 
             <!-- <img class="team__img" src="./images/workers-4.jpg" alt="наша команда" width="270" height="260" /> -->
@@ -550,8 +630,37 @@
       </form>
     </div>
   </div>
+  <!-- mobile menu -->
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg class="btn-mobile" wight="40px" height="40px">
+        <use href="./images/icons/symbol-defs.svg#icon-close_40px"></use>
+      </svg>
+    </button>
 
+    <ul class="mobile-menu list">
+      <li><a href="./index.html" class="link current">Студія</a></li>
+      <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
+      <li><a href="./index.html" class="link">Контакти</a></li>
+    </ul>
+
+    <ul class="mobile-container list">
+      <li class="mobile-list"><a href="tel:+380961111111" class="link-tel">+38 096 111 11 11</a></li>
+      <li><a href="mailto:info@devstudio.com" class="link-mail">info@devstudio.com</a></li>
+    </ul>
+
+    <ul class="mobile-socials list">
+      <li class="mobile-socials-item"><a href="" class="link">Instagram</a></li>
+      <li class="mobile-socials-item"><a href="" class="link">Twitter</a></li>
+      <li class="mobile-socials-item"><a href="" class="link">Facebook</a></li>
+      <li class="mobile-socials-item"><a href="" class="link">LinkedIn</a></li>
+    </ul>
+  </div>
   <script src="./js/modal.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
