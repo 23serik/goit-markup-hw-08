@@ -172,11 +172,15 @@
 }
 
 &__form-agreement-desc {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: calc(14px/12px);
   letter-spacing: 0.03em;
 
   color: var(--secondary-color-text);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(24px/14px);}
 }
 
 &__form-agreement-link {

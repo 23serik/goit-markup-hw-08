@@ -7,8 +7,15 @@
     line-height: calc(28px/24px);
     text-align: center;
     letter-spacing: 0.03em;
+    // padding-top: 16px;
+    // padding-bottom: 16px;
+   
 
     color: var(--accent-color);
+
+    @media screen and (max-width: 767px) {
+        padding-top: 16px;
+            padding-bottom: 16px; }
 
     @media screen and (min-width: 768px) {
             margin-right: 88px;
@@ -33,5 +40,6 @@
 
 &__header {
     color: #000000;
+   
 }
 }
