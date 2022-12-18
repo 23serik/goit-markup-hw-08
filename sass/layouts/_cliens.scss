@@ -39,8 +39,11 @@
         }
 
     &__item {
-            width: 210px;
+             width: calc((100% - 30px)/2);
             height: 92px;
+            // @media screen and (max-width: 479px) {
+            // width: calc((100% - 30px)/2);
+            //     }
 
             @media screen and (min-width: 768px) {
                     width: 226px;
@@ -63,8 +66,11 @@
             color: var(--icon-color);
     
             transition: color var(--duration) var(--timing-function),
-                border-color var(--duration) var(--timing-function);
-        }
+         
+            border-color var(--duration) var(--timing-function);
+
+        
+    }
 
     &__link:hover,
     &__link:focus {
